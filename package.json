@@ -1,0 +1,13 @@
+{
+  "name": "rendering-performance-workshop",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^0.11.1",
+    "prettier": "^1.14.2"
+  },
+  "scripts": {
+    "start": "http-server"
+  }
+}

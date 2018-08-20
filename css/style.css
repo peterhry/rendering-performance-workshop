@@ -1,0 +1,63 @@
+img {
+  max-width: 100%;
+  height: auto;
+  box-shadow: 0 2px 3px #ccc;
+  margin: 1em 0;
+}
+
+@-webkit-keyframes bad-animation {
+  to {
+    margin-left: 500px;
+    background: white;
+  }
+}
+
+@keyframes bad-animation {
+  to {
+    margin-left: 500px;
+    background: white;
+  }
+}
+
+@-webkit-keyframes good-animation {
+  to {
+    transform: translateX(500px);
+    opacity: 0;
+  }
+}
+
+@keyframes good-animation {
+  to {
+    transform: translateX(500px);
+    opacity: 0;
+  }
+}
+
+.ball {
+  background: #ff0000;
+  cursor: pointer;
+  width: 5em;
+  height: 5em;
+  border-radius: 50%;
+  margin-bottom: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ball--css {
+  background: #0022ff;
+}
+
+.ball--bad-css {
+  animation: bad-animation 5s linear infinite paused;
+}
+
+.ball--good-css {
+  animation: good-animation 5s linear infinite paused;
+}
+
+.ball--js {
+  background: #ffcc00;
+  will-change: transform;
+}
